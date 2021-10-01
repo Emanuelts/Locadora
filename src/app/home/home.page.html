@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Imovel
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-card>
+
+  <ion-card-content>
+    Cadastre o Imovel 
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">Codigo:</ion-label>
+        <ion-input type="number" [(ngModel)]="imovel.cod" placeholder="Codigo do Imovel"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Tipo:</ion-label>
+        <ion-input type="text" [(ngModel)]="imovel.tipo" placeholder="Tipo de Imovel"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Nome:</ion-label>
+        <ion-input type="number" [(ngModel)]="imovel.nome" placeholder="Nome do proprietario"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Quantidade de quartos:</ion-label>
+        <ion-input type="text" [(ngModel)]="imovel.quant1" placeholder="Quantidade de quartos"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Quantidade de banheiros:</ion-label>
+        <ion-input type="text" [(ngModel)]="imovel.quant2" placeholder="Quantidade de banheiros"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Valor:</ion-label>
+        <ion-input type="text" [(ngModel)]="imovel.valor" placeholder="Valor do Imovel"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Endereço:</ion-label>
+        <ion-input type="text" [(ngModel)]="imovel.endereco" placeholder="Endereço do Imovel"></ion-input>
+      </ion-item>
+         
+
+    </ion-list>
+    <ion-button expand="block" (click)="gravar();">
+      <ion-icon name="save" ></ion-icon >
+      Gravar
+    </ion-button>
+
+  </ion-card-content>
+</ion-card>
+
+
+
